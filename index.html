@@ -19,7 +19,7 @@
     </header>
     <div class="conteudo">
 
-        <video autoplay loop muted plays-inline class="back-video">
+        <video autoplay loop muted plays-inline class="back-video"">
             <source src="./imagens/background-video.mp4" type="video/mp4">
         </video>
 
@@ -27,7 +27,7 @@
         <main class="main">
             <p>Explore esse maravilhoso universo que chamamos de lar!<br>
                 Cada dia um novo vídeo ou foto é incorporado ao site. <br>
-                Dica: experimente selecionar a sua data de nascimento e<br>
+                Dica: experimente selecionar a sua data de aniversário e<br>
                 descubra como estava o céu nesse dia tão especial!</p>
 
             <div class="pesquisa" id="pesquisa">
@@ -35,16 +35,15 @@
                 <input type="date" name="data" class="data" id="data" min="1995-06-20">
                 <button class="submit" id="submit" value="Pesquisar">Pesquisar</button>
             </div>
-            <div id="api">
-                <p class="titulo"></p>
-                <p class='imagem'></p>
-                <p class = "descrição"></p> <br><br>
-                <p class = "assinatura"></p>
-            </div>
         </main>
     </div>
-
-    <!-- chave api nasa: qGWCQQcJmzQ55ezmX9qU822MawyJrlKmfnYMg4Xt -->
+    <section class="api">
+        <h2 id="titulo"></h2>
+        <br><br>
+        <p class="imagem" id='imagem'></p>
+        <p id = "descricao"></p> <br><br>
+        <p id = "assinatura"></p>
+    </section>
 
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="index.js"></script>
