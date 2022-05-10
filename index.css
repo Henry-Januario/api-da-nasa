@@ -81,6 +81,8 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
+    margin-left: 5%;
+    margin-right: 5%;
 }
 
 @media (min-aspect-ratio: 16/9){

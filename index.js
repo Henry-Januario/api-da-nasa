@@ -18,8 +18,8 @@ function apiDaNasa() {
 function apod(resultado) {
     const imagem = $('#imagem');
     const titulo = $('#titulo');
-    const descricao = $('descricao');
-    const assinatura = $('assinatura');
+    const descricao = $('#descricao');
+    const assinatura = $('#assinatura');
 
     titulo.html(`${resultado.title}`);
     descricao.html(`${resultado.explanation}`);
