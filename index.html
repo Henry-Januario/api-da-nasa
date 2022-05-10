@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Api da Nasa</title>
+    <link rel="stylesheet" href="index.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <header class="header">
+        <h1>NasaSpace</h1>
+    </header>
+    <div class="conteudo">
+
+        <video autoplay loop muted plays-inline class="back-video">
+            <source src="./imagens/background-video.mp4" type="video/mp4">
+        </video>
+
+
+        <main class="main">
+            <p>Explore esse maravilhoso universo que chamamos de lar!<br>
+                Cada dia um novo vídeo ou foto é incorporado ao site. <br>
+                Dica: experimente selecionar a sua data de nascimento e<br>
+                descubra como estava o céu nesse dia tão especial!</p>
+
+            <div class="pesquisa" id="pesquisa">
+
+                <input type="date" name="data" class="data" id="data" min="1995-06-20">
+                <button class="submit" id="submit" value="Pesquisar">Pesquisar</button>
+            </div>
+            <div id="api">
+                <p class="titulo"></p>
+                <p class='imagem'></p>
+                <p class = "descrição"></p> <br><br>
+                <p class = "assinatura"></p>
+            </div>
+        </main>
+    </div>
+
+    <!-- chave api nasa: qGWCQQcJmzQ55ezmX9qU822MawyJrlKmfnYMg4Xt -->
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="index.js"></script>
+</body>
+
+</html>

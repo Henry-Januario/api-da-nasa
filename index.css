@@ -1,0 +1,111 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.conteudo {
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    padding: 0 5%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: white;
+    font-family: 'Times New Roman', Times, serif;
+}
+.back-video {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
+}
+
+.header{
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    height: 50px;
+    text-align: center;
+    font-size: 40px;
+    color: white;
+    font-weight: 600;
+    transition: 0.5s;
+}
+
+.header:hover{
+    -webkit-text-stroke: 2px white;
+    color: transparent;
+}
+
+.main{
+    background-color: rgba(14, 14, 14, 0.8);
+    padding: 2em;
+    display: flex;
+    text-align: left;
+    width: auto;
+    font-size: 25px;
+    justify-content: space-around;
+}
+
+.pesquisa{
+   padding-top: 1.5em;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+}
+
+.data{
+    width: 200px;
+    height: 30px;
+    background-color: rgba(159, 30, 252, 0.58);
+    color: white;
+    text-align: center;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.submit{
+    width: 100px;
+    margin: 10px;
+    border-radius: 7px;
+    border-color: rgba(159, 30, 252, 0.58);
+}
+
+@media (min-aspect-ratio: 16/9){
+    
+    .back-video{
+        width: 100%;
+        height: auto;
+    }
+}
+
+@media (max-aspect-ratio: 16/9){
+    body{
+        background-image: url(./imagens/background-image.jpg) ;
+        background-size: 100%;
+        background-repeat: no-repeat;
+        background-attachment: scroll;
+    }
+
+    .header{
+        font-size: 20px;
+        padding-top:60px;
+        padding-bottom: 0;
+    }
+    .back-video{
+        display: none;
+    }
+
+    .main{
+        display: flex;
+        flex-direction: column;
+        font-size: 20px;
+        height:400px;
+        margin-top:0;
+        padding-top: 0;
+        padding-bottom: 0;
+
+    }
+}
+
