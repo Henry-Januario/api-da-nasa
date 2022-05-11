@@ -1,13 +1,12 @@
-const btn = document.getElementById('submit')
-btn.addEventListener('click', function () {
+$('#submit').click(() => {
     apiDaNasa()
 })
 
 function apiDaNasa() {
-    const data = $('#data').val();
+    const dataDoInput = $('#data').val();
 
     $.ajax({
-        url: `https://api.nasa.gov/planetary/apod?api_key=QecdsA0cK1vr5blGuUQkvTYa2NXkyjSYBdKty3NW&date=${data}`,
+        url: `https://api.nasa.gov/planetary/apod?api_key=QecdsA0cK1vr5blGuUQkvTYa2NXkyjSYBdKty3NW&date=${dataDoInput}`,
         success: function (data) {
             apod(data);
         }

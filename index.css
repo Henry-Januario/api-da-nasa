@@ -127,5 +127,8 @@ body {
     .api{
         margin-bottom: 50%;
     }
+    .img{
+        width:100%;
+    }
 }
 
