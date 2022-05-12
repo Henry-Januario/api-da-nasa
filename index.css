@@ -43,6 +43,7 @@ body {
 .header:hover{
     -webkit-text-stroke: 2px white;
     color: transparent;
+    cursor: default;
 }
 
 .main{
